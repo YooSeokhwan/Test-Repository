@@ -6,44 +6,49 @@
             height="100%">
     <f:DynamicPage id="RequestPage">
         <f:content class="sapUiSmallMargin">
-            <t:Table id="RequestTable"                    
+            <t:Table 
+                    id="RequestTable"                    
+                    rows="{Request>/RequestOrder}"
                     selectionMode="MultiToggle"
                     width="auto">
                 <t:columns>
                     <t:Column hAlign="Center">
                         <Label text="요청 번호" />
                         <t:template>
-                            <Text text="" />
+                            <Text text="{Request>ReqNum}" />
                         </t:template>
                     </t:Column>
                     <t:Column hAlign="Center">
                         <Label text="요청 물품" />
                         <t:template>
-                            <Text text="" />
+                            <Text text="{Request>ReqGood}" />
                         </t:template>
                     </t:Column>
                     <t:Column hAlign="Center">
                         <Label text="물품 개수" />
                         <t:template>
-                            <Text text="" />
+                            <Text text="{Request>ReqQty}" />
                         </t:template>
                     </t:Column>
                     <t:Column hAlign="Center">
                         <Label text="요청자" />
                         <t:template>
-                            <Text text="" />
+                            <Text text="{Request>Requester}" />
                         </t:template>
                     </t:Column>
                     <t:Column hAlign="Center">
                         <Label text="요청 일자" />
                         <t:template>
-                            <Text text="" />
+                            <Text text="{Request>ReqDate}" />
                         </t:template>
                     </t:Column>
                     <t:Column hAlign="Center">
                         <Label text="처리 상태" />
                         <t:template>
-                            <Text text="" />
+                            <ObjectStatus text= "{
+                                path: 'Request>ReqStatus',
+                                formatter: '.formatter.statusText'
+                                }" />
                         </t:template>
                     </t:Column>
                 </t:columns>
