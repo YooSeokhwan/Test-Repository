@@ -1,4 +1,5 @@
-<mvc:View controllerName="project1.controller.Request"
+<mvc:View 
+            controllerName="project1.controller.Request"
             xmlns="sap.m"
             xmlns:f="sap.f"
             xmlns:t="sap.ui.table"
@@ -7,6 +8,7 @@
             xmlns:layout="sap.ui.layout"
             xmlns:core="sap.ui.core"
             height="100%">
+
     <f:DynamicPage id="RequestPage">
         <f:title>
             <f:DynamicPageTitle>
@@ -26,6 +28,40 @@
                             <Input id="ReqNum"/>
                             <layoutData>
                                 <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                            </layoutData>
+                        </VBox>
+                        <VBox>
+                            <Label text="요청 물품 : "/>
+                            <Input id="ReqGood"/>
+                            <layoutData>
+                                <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                            </layoutData>
+                        </VBox>
+                        <VBox>
+                            <Label text="요청자 : "/>
+                            <Input id="Requester"/>                            <layoutData>
+                                <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                            </layoutData>
+                        </VBox>
+                        <VBox>
+                            <Label text="요청 일자"/>
+                            <DatePicker
+                                id="ReqDate"
+                                displayFormat="yyyy-MM"/>
+                            <layoutData>
+                                <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                            </layoutData>
+                        </VBox>
+                        <VBox>
+                            <Label text="처리 상태 : "/>     
+                            <Select width="100%" id="ReqStatus">
+                                <core:Item text="전체"/>
+                                <core:Item text="승인"/>
+                                <core:Item text="처리 대기"/>
+                                <core:Item text="반려"/>
+                            </Select>
+                            <layoutData>
+                                <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
                             </layoutData>
                         </VBox>
                     </form:content>
