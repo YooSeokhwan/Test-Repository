@@ -74,24 +74,27 @@
       },
       "routes": [
         {
-          "name": "Routeapp",
-          "pattern": ":?query:",
+          "name": "Request",
+          "pattern": "",
           "target": [
-            "Targetapp"
+            "Request"
           ]
         }
       ],
       "targets": {
-        "Targetapp": {
-          "id": "app",
-          "name": "app"
+        "Request": {
+          "viewType": "XML",
+          "transition":"slide",
+          "clearControlAggregation": false,
+          "viewId": "Request",
+          "viewName": "Request"
         }
       }
     },
     "rootView": {
-      "viewName": "project1.view.App",
+      "viewName": "project1.view.app",
       "type": "XML",
-      "id": "App",
+      "id": "appView",
       "async": true
     }
   }

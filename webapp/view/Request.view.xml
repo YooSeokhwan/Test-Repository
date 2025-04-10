@@ -1,0 +1,53 @@
+<mvc:View controllerName="project1.controller.Request"
+            xmlns="sap.m"
+            xmlns:f="sap.f"
+            xmlns:t="sap.ui.table"
+            xmlns:mvc="sap.ui.core.mvc"
+            height="100%">
+    <f:DynamicPage id="RequestPage">
+        <f:content class="sapUiSmallMargin">
+            <t:Table id="RequestTable"                    
+                    selectionMode="MultiToggle"
+                    width="auto">
+                <t:columns>
+                    <t:Column hAlign="Center">
+                        <Label text="요청 번호" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="요청 물품" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="물품 개수" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="요청자" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="요청 일자" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                    <t:Column hAlign="Center">
+                        <Label text="처리 상태" />
+                        <t:template>
+                            <Text text="" />
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>
