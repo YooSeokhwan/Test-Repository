@@ -48,6 +48,10 @@
                             <ObjectStatus text= "{
                                 path: 'Request>ReqStatus',
                                 formatter: '.formatter.statusText'
+                                }"
+                                state = "{= ${Request>ReqStatus} === 'A' ? 'Success' :
+                                            ${Request>ReqStatus} === 'C' ? 'Error' :
+                                            'None'
                                 }" />
                         </t:template>
                     </t:Column>
