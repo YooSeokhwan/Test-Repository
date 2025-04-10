@@ -3,8 +3,35 @@
             xmlns:f="sap.f"
             xmlns:t="sap.ui.table"
             xmlns:mvc="sap.ui.core.mvc"
+            xmlns:form="sap.ui.layout.form"
+            xmlns:layout="sap.ui.layout"
+            xmlns:core="sap.ui.core"
             height="100%">
     <f:DynamicPage id="RequestPage">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <HBox>
+                        <Title text= "물품 요청 목록" />
+                    </HBox>
+                </f:heading>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader pinnable="true">
+                <form:SimpleForm layout="ResponsiveGridLayout">
+                    <form:content>
+                        <VBox>
+                            <Label text="요청 번호 : "/>    
+                            <Input id="ReqNum"/>
+                            <layoutData>
+                                <layout:GridData spanXL="2" spanL="2" spanM="6" spanS="12" />
+                            </layoutData>
+                        </VBox>
+                    </form:content>
+                </form:SimpleForm>
+            </f:DynamicPageHeader>
+        </f:header>
         <f:content class="sapUiSmallMargin">
             <t:Table 
                     id="RequestTable"                    
