@@ -16,7 +16,8 @@ sap.ui.define([
             "rootView": {
                 "viewName": "project1.view.App",
                 "type": "XML",
-                "id": "app"
+                "id": "app",
+                manifest: "json"
             }
         },
 
