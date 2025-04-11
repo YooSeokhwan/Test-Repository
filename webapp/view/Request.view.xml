@@ -81,6 +81,18 @@
                     rows="{Request>/RequestOrder}"
                     selectionMode="MultiToggle"
                     width="auto">
+
+                    <t:extension>
+                        <OverflowToolbar>
+                            <Title id="TableName" text="물품 요청 목록"/>
+                            <ToolbarSpacer/>
+                            <Button
+                                icon="sap-icon://sort"
+                                tooltip="정렬"
+                                press="onSort"
+                                type="Transparent"/>
+                        </OverflowToolbar>
+                    </t:extension>
                 <t:columns>
                     <t:Column hAlign="Center">
                         <Label text="요청 번호" />
