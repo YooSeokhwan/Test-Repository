@@ -88,6 +88,13 @@
           "target": [
             "Request"
           ]
+        },
+        {
+          "name": "CreateOrder",
+          "pattern": "CreateOrder",
+          "target": [
+              "CreateOrder"
+          ]
         }
       ],
       "targets": {
@@ -97,6 +104,12 @@
           "clearControlAggregation": false,
           "viewId": "Request",
           "viewName": "Request"
+        },
+        "CreateOrder": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "CreateOrder",
+          "viewName": "CreateOrder"
         }
       }
     },

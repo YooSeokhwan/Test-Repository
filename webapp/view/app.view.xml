@@ -6,6 +6,7 @@
     <tnt:ToolPage id="toolPage">
         <tnt:header>
             <tnt:ToolHeader>
+                <Image src="webapp/image/logo.png" class="sapUiSmallMargin" height="30px"/>
                 <MenuButton enabled="true" text="물품 요청">
                     <menu>
                         <Menu>

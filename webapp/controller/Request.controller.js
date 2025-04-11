@@ -71,6 +71,10 @@ sap.ui.define([
             aSorters.push(new Sorter(sPath, bDescending));
             let oBinding = this.byId("RequestTable").getBinding("rows");
             oBinding.sort(aSorters);
+        },
+
+        onCreateOrder : function () {
+            this.getOwnerComponent().getRouter().navTo("CreateOrder");
         }
     });
 });
