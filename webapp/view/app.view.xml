@@ -1,7 +1,24 @@
 <mvc:View
     controllerName="project1.controller.app"
     xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
     xmlns:mvc="sap.ui.core.mvc">
-    <App class="myAppDemoWT" id="app">
-    </App>
+    <tnt:ToolPage id="toolPage">
+        <tnt:header>
+            <tnt:ToolHeader>
+                <MenuButton enabled="true" text="물품 요청">
+                    <menu>
+                        <Menu>
+                            <MenuItem text="물품 요청 목록" />
+                            <MenuItem text="물품 요청 현황" />
+                        </Menu>
+                    </menu>
+                </MenuButton>
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:mainContents>
+            <App class="myAppDemoWT" id="app">
+            </App>
+        </tnt:mainContents>
+    </tnt:ToolPage>
 </mvc:View>
